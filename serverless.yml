@@ -11,8 +11,10 @@ provider:
     serverSideEncryption: AES256
 
 functions:
-  ais2geoson:
+  ais2geojson:
     handler: handler.ais2geoson
+    layers:
+      - {Ref: Ais2geojsonDashlayerLambdaLayer}
 
 layers:
   ais2geojson-layer:
