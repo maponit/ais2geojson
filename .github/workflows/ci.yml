@@ -22,6 +22,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: yarn
+      - run: yarn build:layer
       - run: yarn deploy
         env:
           CI: true
