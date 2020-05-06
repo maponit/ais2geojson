@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "build:layer": "make && mkdir -p layer && mv ais2geojson layer",
-    "deploy": "sls deploy --stage prod --region us-east-2 --namespace $NAMESPACE"
+    "deploy": "sls deploy --stage prod --region us-east-2 --namespace maponit"
   },
   "devDependencies": {
     "serverless": "^1.69.0"
