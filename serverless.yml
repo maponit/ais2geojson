@@ -10,6 +10,10 @@ provider:
     blockPublicAccess: true
     serverSideEncryption: AES256
 
+functions:
+  ais2geoson:
+    handler: handler.ais2geoson
+
 layers:
   ais2geojson-layer:
     path: layer
