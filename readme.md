@@ -69,3 +69,8 @@ $ echo '123;!BSVDM,1,1,,A,13oUhr0000151NhWKUi1vPvJ08Re,0*3A' | ./ais2geojson   |
 and reorganized here.
 
 [Anteo AS](http://anteo.no/) is publishing this piece of software with the BSD license.
+
+## maponit updates
+```bash
+sls invoke -f ais2geojson --stage prod --aws-profile maponit --region us-east-2 --namespace maponit -l
+```
