@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "git@github.com:maponit/ais2geojson.git",
   "author": "Kris Gholson <kris@maponit.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "serverless": "^1.69.0"
+  }
 }
