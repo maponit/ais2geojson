@@ -6,6 +6,10 @@
   "repository": "git@github.com:maponit/ais2geojson.git",
   "author": "Kris Gholson <kris@maponit.com>",
   "license": "MIT",
+  "scripts": {
+    "build:layer": "make && mkdir -p layer && mv ais2geojson layer",
+    "deploy": "sls deploy --stage prod --region us-east-2 --namespace maponit"
+  },
   "devDependencies": {
     "serverless": "^1.69.0"
   }
