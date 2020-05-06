@@ -8,6 +8,7 @@
   "license": "MIT",
   "scripts": {
     "build:layer": "make && mkdir -p layer && mv ais2geojson layer",
+    "predeploy": "echo $NAMESPACE",
     "deploy": "sls deploy --stage prod --region us-east-2 --namespace maponit"
   },
   "devDependencies": {
