@@ -1,0 +1,9 @@
+{
+  "name": "ais2geojson",
+  "version": "1.0.0",
+  "description": "Enable the ais2geojson command line as an AWS Lambda layer - packaged using the serverless framework.",
+  "main": "index.js",
+  "repository": "git@github.com:maponit/ais2geojson.git",
+  "author": "Kris Gholson <kris@maponit.com>",
+  "license": "MIT"
+}
