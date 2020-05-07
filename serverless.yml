@@ -23,3 +23,6 @@ layers:
     licenseInfo: MIT
     allowedAccounts:
       - '*'
+
+resources:
+  Description: Serverless stack to make the ais2geojson command line parser available to functions.
