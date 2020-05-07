@@ -6,7 +6,7 @@ const execP = util.promisify(exec)
 module.exports.ais2geojson = async event => {
 
     const result = await execP(`echo '${event.message}' | ais2geojson`)
-    const geojson = result.stdout
+    const geojson = JSON.parse(result.stdout)
     console.log(geojson.type)
 
     return geojson
