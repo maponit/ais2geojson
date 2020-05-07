@@ -5,20 +5,13 @@ const execP = util.promisify(exec)
 
 module.exports.ais2geojson = async event => {
 
-    const result = await execP("echo '2017-03-01T13:41:14;!BSVDM,1,1,,B,13nW`F001V0pk1jV0r5s@8rHP<0i,0*13' | ais2geojson")
+    const result = await execP(`echo '${event.message}' | ais2geojson`)
 
     console.log(result);
 
     return {
         statusCode: 200,
-        body: JSON.stringify(
-            {
-                message: 'Go Serverless v1.0! Your function executed successfully!',
-                input: event,
-            },
-            null,
-            2
-        )
+        body: JSON.stringify(result)
     }
 
 }
