@@ -1,4 +1,4 @@
-service: ais2geojson
+service: maponit-ais2geojson
 
 provider:
   name: aws
@@ -12,20 +12,14 @@ provider:
 
 functions:
   ais2geojson:
-    handler: handler.ais2geoson
+    handler: handler.ais2geojson
     layers:
-      - {Ref: Ais2geojsonDashlayerLambdaLayer}
+      - {Ref: Ais2geojsonLambdaLayer}
 
 layers:
-  ais2geojson-layer:
+  ais2geojson:
     path: layer
     description: Make the ais2geojson command line parser available to functions.
-    compatibleRuntimes:
-      - java11
-      - nodejs12.x
-      - python3.8
-      - dotnetcore2.1
-      - go1.x
     licenseInfo: MIT
     allowedAccounts:
       - '*'

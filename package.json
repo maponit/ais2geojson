@@ -1,5 +1,5 @@
 {
-  "name": "ais2geojson",
+  "name": "@maponit/ais2geojson",
   "version": "1.0.0",
   "description": "Enable the ais2geojson command line as an AWS Lambda layer - packaged using the serverless framework.",
   "main": "index.js",
@@ -7,7 +7,7 @@
   "author": "Kris Gholson <kris@maponit.com>",
   "license": "MIT",
   "scripts": {
-    "build:layer": "make && mkdir -p layer && mv ais2geojson layer",
+    "build:layer": "make && mkdir -p layer/bin && mv ais2geojson layer/bin",
     "deploy": "sls deploy --stage prod --region us-east-2 --namespace maponit"
   },
   "devDependencies": {
