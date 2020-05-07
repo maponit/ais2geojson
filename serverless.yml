@@ -10,9 +10,18 @@ provider:
     blockPublicAccess: true
     serverSideEncryption: AES256
 
+package:
+  exclude:
+    - '*'
+    - .github/**
+    - .idea/**
+    - aisparser/**
+    - node_modules/**
+    - test/**
+
 functions:
   ais2geojson:
-    handler: handler.ais2geojson
+    handler: src/handler.ais2geojson
     layers:
       - {Ref: Ais2geojsonLambdaLayer}
 
