@@ -11,7 +11,10 @@
     "undeploy": "sls remove --stage prod --region us-east-2 --namespace maponit",
     "deploy": "sls deploy --stage prod --region us-east-2 --namespace maponit",
     "test1": "sls invoke -f ais2geojson --stage prod --region us-east-2 --namespace maponit --log --path test/aismsg1.json",
-    "test2": "sls invoke -f ais2geojson --stage prod --region us-east-2 --namespace maponit --log --path test/badmsg.json"
+    "test2": "sls invoke -f ais2geojson --stage prod --region us-east-2 --namespace maponit --log --path test/aismsg2.json",
+    "test3": "sls invoke -f ais2geojson --stage prod --region us-east-2 --namespace maponit --log --path test/aismsg3.json",
+    "test4": "sls invoke -f ais2geojson --stage prod --region us-east-2 --namespace maponit --log --path test/aismsg4.json",
+    "testerr": "sls invoke -f ais2geojson --stage prod --region us-east-2 --namespace maponit --log --path test/badmsg.json"
   },
   "devDependencies": {
     "serverless": "^1.69.0"
