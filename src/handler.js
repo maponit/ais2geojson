@@ -7,7 +7,7 @@ module.exports.ais2geojson = async event => {
     const result = await execP(`echo '${event.message}' | ais2geojson`)
     console.log(result)
     if (!result.stdout) {
-        throw `Could not parse ais2geojson from: ${event.message}`
+        throw `Could not parse geojson from: ${event.message}`
     }
     return JSON.parse(result.stdout)
 }
